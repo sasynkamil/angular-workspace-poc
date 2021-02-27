@@ -1,0 +1,17 @@
+<p>menu works! 5</p>
+
+<h3>routerLink</h3>
+<div class="vertical-menu">
+  <ng-container *ngIf="isAppAlfa()">
+    <a routerLink="/alfa/firstpage">App ALFA - page 1 - R</a>
+    <a routerLink="/alfa/secondpage">App ALFA - page 2 - R</a>
+    <a href="/app-beta/beta/firstpage">App BETA - page 1</a>
+    <a href="/app-beta/beta/secondpage">App BETA - page 2</a>
+  </ng-container>
+  <ng-container *ngIf="isAppBeta()">
+    <a href="/app-alfa/alfa/firstpage">App ALFA - page 1</a>
+    <a href="/app-alfa/alfa/secondpage">App ALFA - page 2</a>
+    <a routerLink="/beta/firstpage">App BETA - page 1 - R</a>
+    <a routerLink="/beta/secondpage">App BETA - page 2 - R</a>
+  </ng-container>
+</div>
